@@ -1,12 +1,12 @@
 {
-    "name": "chinapedia/pandoc-php",
-    "description": "chinapedia/pandoc-php",
+    "name": "kelvinq/pandoc-php",
+    "description": "kelvinq/pandoc-php",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "liruqi",
-            "email": "liruqi@gmail.com"
+            "name": "Kelvin Quee",
+            "email": "kelvin@quee.org"
         }
     ],
     "autoload": {
