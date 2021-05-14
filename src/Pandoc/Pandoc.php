@@ -230,8 +230,6 @@ class Pandoc
             $this->tmpFile
         );
 
-        echo $command;
-
         exec(escapeshellcmd($command), $output);
 
         return implode("\n", $output);
