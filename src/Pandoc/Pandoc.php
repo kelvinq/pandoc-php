@@ -222,7 +222,7 @@ class Pandoc
         file_put_contents($this->tmpFile, $content);
 
         $command = sprintf(
-            '%s --log=$s/pandoc.log --from=%s --to=%s %s',
+            '%s --log=%s/pandoc.log --from=%s --to=%s %s',
             $this->tmpDir,
             $this->executable,
             $from,
