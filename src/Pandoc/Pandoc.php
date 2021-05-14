@@ -222,13 +222,15 @@ class Pandoc
         file_put_contents($this->tmpFile, $content);
 
         $command = sprintf(
-            '%s --log=%s/pandoc.log --from=%s --to=%s %s',
-            $this->tmpDir,
+            '%s --from=%s --to=%s %s',
             $this->executable,
+            //$this->tmpDir,
             $from,
             $to,
             $this->tmpFile
         );
+
+        echo $command;
 
         exec(escapeshellcmd($command), $output);
 
